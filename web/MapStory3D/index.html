@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>《地图故事》平台V1.0</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/bucket.css">
+    <link href="ThirdParty/bootstrap-3.3.0/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="image/logo2.png" style="width: 60px;float: left">
+            <!--<a class="navbar-brand" href="#">地图故事</a>-->
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">我们的故事</a></li>
+                <li><a href="#">游玩大作战</a></li>
+                <li><a href="#">专属主题</a></li>
+                <li><a href="#">最美记忆</a></li>
+                <li><a href="#">虚拟世界</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a data-toggle="modal" data-target="#register" >注册</a></li>
+                <li><a data-toggle="modal" data-target="#signin" >登录</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        城大12地信 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">CSND</a></li>
+                        <li><a href="#">QQ群</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content" style="margin-top: 220px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    《地图故事》指引
+                </h4>
+            </div>
+            <div class="modal-body">
+                Hello！！！欢迎来到《地图故事》大场景。在这里你可以记录、分享你自己的故事。
+                接下来，我首先给大家讲一个关于我们城大12级地信的故事。。。
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="modal-close">关闭
+                </button>
+                <button type="button" class="btn btn-primary" id="start">
+                    开始
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<div id="introPanel" class="panel panel-primary" style="position: absolute;top:200px;right: 20px;width:300px;z-index: 1111;display: none">
+    <div class="panel-heading">
+        <h3 id="introTitle" class="panel-title"></h3>
+    </div>
+    <div class="panel-body">
+        <img id="introPic" src="image/school.jpg" style="width: 266px">
+        <div id="introContent" style="margin-top: 10px;text-indent: 2em"></div>
+    </div>
+    <div class="panel-footer">
+        <button type="button" class="btn btn-primary" id="next" style="margin-left: 204px;">
+            继续
+        </button>
+    </div>
+</div>
+<div id="earth"></div>
+<div id="earth3"></div>
+<div id="toolPanel">
+    <span>光照</span>
+    <div class="btn-group btn-group-sm light">
+        <button type="button" class="btn btn-primary" id="lightstart">开启</button>
+        <button type="button" class="btn btn-primary active disabled" id="lightshut">关闭</button>
+    </div>
+    <span>雾效</span>
+    <div class="btn-group btn-group-sm fog">
+        <button type="button" class="btn btn-primary active disabled" id="fogstart">开启</button>
+        <button type="button" class="btn btn-primary" id="fogshut">关闭</button>
+    </div>
+    <span>鹰眼</span>
+    <div class="btn-group btn-group-sm eagle">
+        <button type="button" class="btn btn-primary" id="eaglestart">开启</button>
+        <button type="button" class="btn btn-primary active disabled" id="eagleshut">关闭</button>
+    </div>
+    <span>时间线</span>
+    <div class="btn-group btn-group-sm timeline">
+        <button type="button" class="btn btn-primary" id="timelinestart">开启</button>
+        <button type="button" class="btn btn-primary active disabled" id="timelineshut">关闭</button>
+    </div>
+    <span>2/3D切换</span>
+    <div class="btn-group btn-group-sm scenemode">
+        <button type="button" class="btn btn-primary" id="scenemodestart">2D</button>
+        <button type="button" class="btn btn-primary active disabled" id="scenemodeshut">3D</button>
+    </div>
+</div>
+<div id="footbar">
+    <div id="location"></div>
+</div>
+<!--<div id="container" style="z-index: 5;position: absolute;top: 300px;left: 20px;height: 400px;width: 600px"></div>-->
+<script type="text/javascript" src="ThirdParty/requirejs-2.1.20/require.min.js"></script>
+<script type="text/javascript" src="ThirdParty/jquery/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="ThirdParty/bootstrap-3.3.0/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript" src="js/EarthWork.min.js"></script>
+<script type="text/javascript">
+    require.config({
+        waitSeconds : 0
+    });
+</script>
+</body>
+</html>
