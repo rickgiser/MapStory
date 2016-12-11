@@ -1,0 +1,77 @@
+html,body{margin: 0;padding: 0;width: 100%;height: 100%}
+.contener-all{position: fixed;
+    top:0;left: 0;
+    bottom:0;right: 0}
+.contener{position: relative;
+    top: 0px;left: 0px;bottom: 0px;right: 0px;width: 100%;height: 100%;
+}
+.image_log{
+    width: 50px;height: 55px;display: block;position: absolute;left: 30px;
+    top:0;
+}
+.nav_head{ margin: 0;padding: 0;  text-decoration: none;  list-style: none;float: left;position: absolute;left: 80px;
+    top:0}
+.nav_head li{
+    float: left;  line-height: 55px;  text-align: center;  position: relative;
+}
+.nav_head li a{text-decoration: none;  width: 90px; color: #fff; display: block; line-height: 55px ;text-align: center;cursor: pointer;
+ }
+.nav_head li a:hover{background-color: #2e6da4;cursor: pointer;color: silver}
+
+/*.nav_head{ position:absolute;left:80px;
+    top:0;line-height: 55px;text-align: center;margin-left: 30px;font-size: 16px;font-family: 微软雅黑}*/
+.navheandern{
+    height: 55px;width: 100% ;position: relative;
+    top:0;left: 0px;right: 0px;background-color: rgb(67, 142, 185); z-index: 222}
+.nav_left{  height: 100%;width: 50%;position: absolute;  left:0;  top:0;  color: #fff;  }
+.nav_right{  height: 100%;position: absolute;  left: 50%;  right: 0px;  top:0;  }
+.nav_right .nav_top{
+    margin: 0;padding: 0;  text-decoration: none;  list-style: none;float: right;  }
+.nav_top li{
+    float: left;  line-height: 55px;  text-align: center;  position: relative;
+}
+.nav_top li a{text-decoration: none;   color: #fff; display: block; line-height: 55px ;width: 90px;text-align: center;cursor: pointer;
+}
+.nav_top li a:hover{background-color: #2e6da4;cursor: pointer;color: silver}
+
+.nav_top li ul{  display: none;  position: absolute;  padding: 0px;  margin: 0px;  left: 0px;  top: 55px;  background-color: rgb(67, 142, 185);  list-style: none;
+}
+.nav_top li:hover ul{  display: block;  width: 90px;  }
+.nav_top li:hover ul li ul{  display: none;  }
+.nav_top li ul li{  float: none;  display: block;  height: 35px;  margin: 0px;  padding: 0;  position: relative;  width: 90px;  }
+.nav_top li ul li:hover ul{  display: block;  left: 90px;  top: 0px;  position: absolute;
+}
+.nav_top li ul li a{  margin: 0px;  padding: 0px;  display: block;  text-align: center;  line-height: 35px;cursor: pointer;  }
+.contener_home{
+    display: none;
+    width: 100%;
+    height: 100%;
+
+}
+.contener_active{
+    display: block;
+
+}
+.active_li{
+    background-color: #04a2cc;
+    color: #fff;
+}
+#map{
+    width: 100%;height: 100%;position: absolute;left: 0px;top: 0px;
+}
+ .mapheader{ height:40px;width:385px; position: relative;z-index: 1000 ;left: 20px;top:20px;background-color: #761c19}
+ .mapheader_search{
+ height: 40px;  width: 330px;position: absolute;left: 0px;top: 0px;background-color: #fff;border-radius:2px 0 0 2px;
+ }
+ .mapheader_btn{
+     height: 40px;  width: 55px;position: absolute;left: 330px;top: 0px;
+ }
+ .searchtext{    background-color: white;cursor:auto;outline: none;
+     width: 330px;height: 38px;display: block;margin: 0px;padding:9px 10px;box-sizing:border-box;border: 0px;line-height: 20px;font-size: 16px;color: #333;border-radius: 2px 0 0 2px;}
+ .searchbt{
+     width: 55px;;height: 38px;display: block;margin: 0px;padding: 0px;outline: none;border: 0;cursor: pointer;background-color: #3385ff;
+     border-radius:0 2px 2px 0;box-shadow:1px 2px 1px rgba(0,0,0,.15)}
+ #results{
+     width: 385px;z-index: 1000;position: absolute;left: 20px;
+     top:80px;background-color: #0088DB;
+ }
